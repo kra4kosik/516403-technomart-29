@@ -16,7 +16,7 @@
   <header class="header main-header">
     <div class="header-top-nav">
       <div class="container">
-        <a class="header-logo" href="#">Техномарт</a>
+        <a class="header-logo">Техномарт</a>
 
         <div class="header-search-field">
           <form action="https://echo.htmlacademy.ru/" method="post">
@@ -27,7 +27,7 @@
                   fill="white" />
               </svg>
             </button>
-            <label for="search">
+            <label for="search" class="search-zone">
               <input type="search" name="search" id="search" placeholder="Поиск:" required>
             </label>
           </form>
@@ -68,6 +68,7 @@
 
   <main>
     <section class="site-menu container clearfix">
+
       <div class="menu-item material new-item">
         <p class="menu-item-name">Материалы</p>
         <a href="#" class="menu-item-info">На любой вкус</a>
@@ -124,7 +125,9 @@
           <p class="menu-item-name">Доставка</p>
           <a href="#" class="menu-item-info">Бесплатно</a>
         </div>
+
       </div>
+
     </section>
 
     <section class="popular-goods container clearfix">
@@ -284,8 +287,8 @@
         <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис:</p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1594815333193!5m2!1sru!2sby"
-          class="company-map" width="300" height="158" style="border:0;" allowfullscreen=""
-          aria-hidden="false" tabindex="0">
+          class="company-map" width="300" height="158" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0">
         </iframe>
         <a href="#" class="feedback-button">Заблудились? Напишите нам!</a>
       </section>
@@ -293,7 +296,7 @@
 
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="footer-top-block container clearfix">
       <a href="index.html" class="footer-logo">Техномарт</a>
       <ul class="footer-nav-block1">
@@ -341,9 +344,9 @@
             Все права защищены</p>
         </div>
         <div class="footer-social">
-          <a href="#" class="social-button vk-button"></a>
-          <a href="#" class="social-button fb-button"></a>
-          <a href="#" class="social-button inst-button"></a>
+          <a href="#" class="social-button vk-button" title="VK"></a>
+          <a href="#" class="social-button fb-button" title="Facebook"></a>
+          <a href="#" class="social-button inst-button" title="Instagram"></a>
         </div>
         <div class="footer-feedback">
           <p>Обратная связь:</p>
@@ -372,7 +375,8 @@
           </div>
         </div>
         <label class="feedback-data" for="feedback-textarea">Текст письма:</label>
-        <textarea class="textarea" name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>
+        <textarea class="textarea" name="text" id="feedback-textarea" placeholder="В свободной форме" required
+          rows="5"></textarea>
       </div>
       <div class="feedback-block-button">
         <button type="submit" class="feedback-button-popup">Отправить</button>
